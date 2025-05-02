@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета вступника</title>
+    <link rel="stylesheet" href="chapter1.css">
+    <script src="chapter1.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Анкета для вступу до університету</h2>
+    <form id="applicationForm">
+        <label for="firstName">Ім'я:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Прізвище:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="middleName">По батькові:</label>
+        <input type="text" id="middleName" name="middleName" required>
+
+        <label for="previousSchool">Попереднє місце навчання:</label>
+        <input type="text" id="previousSchool" name="previousSchool" required>
+
+        <label for="faculty">Виберіть факультет:</label>
+        <select id="faculty" name="faculty" required>
+            <option value="" disabled selected>Оберіть факультет</option>
+            <option value="computer_science">Факультет комп'ютерних наук та технологій</option>
+            <option value="engineering">Факультет інженерії</option>
+            <option value="economics">Факультет економіки</option>
+            <option value="medicine">Медичний факультет</option>
+            <option value="law">Юридичний факультет</option>
+            <option value="arts">Гуманітарний факультет</option>
+        </select>
+
+        <button type="button" onclick="saveApplication()">Записатися</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html> <!-- указание версии html-->
+<html>
+    <head>
+        <!--описуємо дані документа, які видно поисковикам, але не видно корийстувачам; вказуємо характеристики документа-->
+        <meta charset = "utf-8">
+        <!--не обов'язково автор та опис-->
+        <meta name="author" content="Савченко Дар'я"> 
+        <meta name="description" content="Вивчення HTML">
+        <meta name = "keywords" content="навчання, HTML"> <!--ключові слова для пошукових систем--> 
+        <title>Головна сторінка</title> <!--назва вкладки сторінки-->
+        <!--ПІДКЛЮЧЕННЯ CSS ОБОВ'ЯЗКОВО В ШАПЦІ-->
+        <link rel="stylesheet" href="CSS/main.css">
+    </head>
+    <body>
+        <!--РОБОТА З ТЕКСТОМ-->
+        <h1>ЗАГОЛОВОК</h1>
+        <!--абзац-->
+        <p> звичайний текст-абзац</p> 
+        <p> <b>жирний1-b</b> <strong>жирний2-strong</strong> </p> 
+        <p> <em>курсив1-em</em> <i>курсив2-i</i> </p>
+        <p> <strike>перекреслений-strike</strike> </p>
+        <p> a<sup>2(sup)</sup> та H<sub>2(sub)</sub>O </p>
+        <p> Перенос тексту<br> за допомогою <br><br> одиночного тегу br </p>
+        <p> нижче створення девайдера hr <hr> </p>
+        тег abbr <abbr title="Київський авіаційний інститут">КАІ</abbr>
+        <address>Одесса, Україна</address>
+        <p> <big>Збільшення</big> або <small>зменшення</small> окремих частин тексту </p>
+        <pre>Текст в тегу pre відображається 
+            в точному вигляді, як     ви        його ввели</pre>
+        Тег code: <code>let x = 22 </code>
+
+        <!--СПИСКИ-->
+        <h2>Списки</h2>
+        Нумерований список ol
+        <ol>
+            <li>Перший </li>
+            <li>Другий </li>
+            <li>Третій </li>
+        </ol>
+        Нумерований список ol з вказанням початку нумерації start та типу type
+        <ol start="2" type="I">
+            <li>перший (буде 2) </li>
+            <li>другий (буде 3) </li>
+            <li>третій (буде 4)</li>
+        </ol>
+        Ненумерований список ul
+        <ul>
+            <li>Перший </li>
+            <li>Другий </li>
+            <li>Третій </li>
+        </ul>
+        Ненумерований список ul з вказанням типу type
+        <ul type="circle">
+            <li>перший</li>
+            <li>другий</li>
+            <li>третій</li>
+        </ul>
+
+        <!--Посилання, текст через наведення-->
+        <br><br>
+        <p title="какашке"> НАВЕДИ </p>
+        <a href="https://i.pinimg.com/736x/59/cc/f6/59ccf6b64dd2dc80ed07afaa50097569.jpg" title="тикни щоб побачити кітіка">Посилання</a><br>
+        <a href="https://i.pinimg.com/736x/59/cc/f6/59ccf6b64dd2dc80ed07afaa50097569.jpg" target="_blank">Посилання в новому вікні з _blank</a><br>
+        <a href="second_page.html"><big>Друга сторінка</big></a><br>
+
+        <!--ЗОБРАЖЕННЯ-->
+        <img src="https://i.pinimg.com/736x/1e/fe/fb/1efefb41b70c2b521a7704ffb4e7ce84.jpg" width="500" height="200" title="кітік" alt="текст, якщо воно не підгрузиться">
+        <img src="images/god_meme.jpg" alt="мема не буіт"><br>
+
+        <!--ТАБЛИЦІ-->
+        <table border="1" width="300">
+            <thead>
+                <tr>
+                    <!--заголовок стовпця, th забезпечує жирність-->
+                    <th>Ім'я</th> 
+                    <th>Прізвище</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td>Дар'я</td>
+                    <td>Савченко</td>
+                </tr>
+                <tr>
+                    <td>Марія</td>
+                    <td>Тигинян</td>
+                </tr>
+                <tr>
+                    <td>Богдан</td>
+                    <td>Васильєв</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Останній</td>
+                    <td>Last</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <!--DIV СТВОРЮЄ БЛОКИ ДЛЯ ТЕКСТУ (БЕЗ ВІДСТУПІВ)-->
+        <div>Просто текстовий блок</div>
+        <div>Можна також <span>виділити</span> окремо через span, щоб потім звернутись через css</div>
+        <!--SPAN СТВОРЮЄ БЛОКИ ДЛЯ РЯДКОВОГО ТЕКСТУ-->
+        <span>Просто текст</span>        
+        <span>Просто текст</span>        
+        
+        <!--ФОРМИ-->
+        <form action="" method="post">  
+            <label for="user_name">Введіть ім'я</label> <!--for після натискання на текст посилає на поле для вводу, яке ви вказали-->
+            <input type="text" placeholder="Підказка для вводу" value="Текст за замовчуванням" maxlength="5" name="user_name" id="user_name"> <br><br>
+            <input type="password"> <br><br>
+            <input type="email"><br><br>
+            <input type="url"><br><br>
+            <input type="color"><br><br>
+            <input type="date"><br><br>
+            <input type="time"><br><br>
+            <input type="datetime"><br><br>
+            <label>checkbox</label>
+            <input type="checkbox"><br><br>
+            <input type="file"><br><br>
+            <input type="button" value="ТИК (просто кнопка)"><br><br>
+            <input type="submit" value="ДОНТ ТИК (перезагружає сторінку і надсилає дані)" ><br><br>
+            <input type="reset" value="Очистити ВСІ ПОЛЯ"><br><br>
+            Оберіть стать:<br>
+            <input type="radio" name="sex">
+            <label>чоловіча</label><br>
+            <input type="radio" name="sex">
+            <label>жіноча</label><br><br>
+        </form>
+        <form>
+            <textarea placeholder="Ввід">Можна вписати текст одразу</textarea> <br><br>
+            <button>КНІПКА (предпочтительно використовувати поза формами)</button>
+        </form>
+        <form>
+            <select>
+                <option disabled selected></option>
+                <option>Item 1</option>
+                <option>Item 2</option>
+                <option>Item 3</option>
+            </select> <br><br>
+            <select multiple>
+                <option disabled selected></option>
+                <option>Item 1</option>
+                <option>Item 2</option>
+                <option>Item 3</option>
+            </select><br><br>
+            <select size="1"> <!--відображається 1 елемент-->
+                <option disabled selected></option>
+                <option>Item 1</option>
+                <option>Item 2</option>
+                <option>Item 3</option>
+            </select>
+        </form>
+        
+        <!--СПЕЦІАЛЬНІ HTML ТЕГИ, МОЖУТЬ ПІДТРИМУВАТИСЬ НЕ У ВСІХ БРАУЗЕРАХ!-->
+        <header>Шапка</header>
+        <main>Основна частина</main>
+        <aside>Бокова частина</aside>
+        <footer>Футер</footer>
+        <progress></progress> <!--виглядає як загрузка-->
+        <progress max="100" value="45">Цей текст відобразиться якщо браузер не підтримує прогресбар</progress><!--задаємо max значення і потім value-заповнення цієї bar-->
+        <details>
+            <summary>Мій любімі тогл ліст (тут: details)</summary>
+           Текст, який відкриється при натисканні на трикутничок
+        </details>
+
+        <!--ПІДКЛЮЧЕННЯ JS, КРАЩЕ ПЕРЕД /БОДІ-->
+        <script> src="JS/main.js" </script>
+    </body>
+</html>

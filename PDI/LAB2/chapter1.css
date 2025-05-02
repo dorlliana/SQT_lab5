@@ -1,0 +1,22 @@
+admission {background-color: #fbf3ff;
+    width: 100%;
+    }
+student {
+    display: block;
+    margin-bottom: 30pt;
+    }
+firstName, lastName, patronymic {
+    display: block;
+    margin-bottom: 3pt;
+    color: #0b4fb6;
+    }
+previousEducation {
+    display: block;
+    margin-bottom: 3pt;
+    color: blueviolet;
+    }
+faculty {
+    display: block;
+    margin-bottom: 3pt;
+    color: darkred;
+    }

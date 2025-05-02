@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Дані запису до бібліотеки</title>
+</head>
+<body>
+    <h1 class="title">Запис до бібліотеки</h1>
+    <form onsubmit="formSubmitted(event)">
+        <p class="info">* - обов'язкове поле</p>
+        <div class="input-group">
+            <label for="name" class="form-section-title">Ім'я*</label>
+            <input type="text" id="name" name="name" required>
+            <label for="lastName" class="form-section-title">Прізвище*</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <label for="patronimic" class="form-section-title">По батькові</label>
+            <input type="text" id="patronimic" name="patronimic">
+        </div>
+        <div class="input-group">
+            <label for="address" class="form-section-title">Адреса*</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="input-group">
+            <label for="passportNumber" class="form-section-title">Номер паспорта*</label>
+            <input type="text" id="passportNumber" name="passportNumber" required>
+        </div>
+        <h2 class="form-section-title">Стать*</h2>
+        <div class="input-group">
+            <input type="radio" name="gender" value="m" id="male" required>
+            <label for="male">Чоловіча</label>
+            <input type="radio" name="gender" value="f" id="female" required>
+            <label for="female">Жіноча</label>
+        </div>
+        <input type="submit" value="Записатися">
+        <input type="button" value="Скинути" onclick="resetForm(event)">
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<!DOCTYPE chapter1 SYSTEM "chapter1.dtd">
+<?xml-stylesheet type="text/css" href="chapter1.css"?>
+<admission>
+    <student>
+        <firstName>Daria</firstName>
+        <lastName>Savchenko</lastName>
+        <patronymic>Vladyslavivna</patronymic>
+        <previousEducation>Kuchurgan comprehensive school</previousEducation>
+        <faculty>Faculty of Computer Science and Technology</faculty>
+    </student>
+
+    <student>
+        <firstName>Maria</firstName>
+        <lastName>Tygynyan</lastName>
+        <patronymic>Serhiivna</patronymic>
+        <previousEducation>Kuchurgan comprehensive school</previousEducation>
+        <faculty>Faculty of Computer Science and Technology</faculty>
+    </student>
+    
+    <student>
+        <firstName>Vladyslav</firstName>
+        <lastName>Shevchenko</lastName>
+        <patronymic>Yaroslavovych</patronymic>
+        <previousEducation>Velyka Pysarivka comprehensive school</previousEducation>
+        <faculty>Faculty of Computer Science and Technology</faculty>
+    </student>
+    
+    <student>
+        <firstName>Igor</firstName>
+        <lastName>Melnyk</lastName>
+        <patronymic>Illich</patronymic>
+        <previousEducation>Varva comprehensive school</previousEducation>
+        <faculty>Faculty of Computer Science and Technology</faculty>
+    </student>
+</admission>

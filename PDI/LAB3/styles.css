@@ -1,0 +1,132 @@
+body {
+    background-color: rgb(253, 248, 255);
+    font-family: Arial, sans-serif;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+#keyboard {
+    text-align: center;
+    margin: auto;
+    border: 1px solid rgb(228, 153, 246);
+}
+
+/* Кнопки вибору діапазону */
+.range-btn {
+    background-color: #ffe681;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.range-btn:hover {
+    background-color: #ffaa00;
+}
+
+/* Кнопки арифметичних знаків */
+.sign-btn {
+    background-color: #8ae8ff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.sign-btn:hover {
+    background-color: #00aaff;
+}
+
+/* Кнопки кожної цифри */
+.num1-btn {
+    background-color: #ccfccc;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.num2-btn {
+    background-color: #a4c6a4;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.num3-btn {
+    background-color: #5a855a;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.num4-btn {
+    background-color: #749974;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.num5-btn {
+    background-color: #ccfce9;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.num6-btn {
+    background-color: #81c8e1;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.num7-btn {
+    background-color: #c5ed85;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.num8-btn {
+    background-color: #cdccfc;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.num9-btn {
+    background-color: #9e7fae;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.num0-btn {
+    background-color: #6a696d;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Кнопка OK */
+.ok-btn {
+    background-color: #f3afaf;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.ok-btn:hover {
+    background-color: #ee5555;
+}

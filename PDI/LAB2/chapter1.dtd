@@ -1,0 +1,10 @@
+<!DOCTYPE admission 
+[
+<!ELEMENT admission (applicant+)>
+<!ELEMENT student (firstName, lastName, patronymic, previousEducation, faculty)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT patronymic (#PCDATA)>
+<!ELEMENT previousEducation (#PCDATA)>
+<!ELEMENT faculty (#PCDATA)>
+]>

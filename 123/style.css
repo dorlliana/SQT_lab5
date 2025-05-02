@@ -1,0 +1,78 @@
+:root {
+  --background-color: #f4f4f9;
+  --text-color: #333;
+  --form-background: #fff;
+  --form-shadow: rgba(0, 0, 0, 0.1);
+  --input-border: #ccc;
+  --submit-background: #5cb85c;
+  --submit-hover-background: #4cae4c;
+  --form-section-title-color: #555;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+title {
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  background: var(--form-background);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--form-shadow);
+  width: 300px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.form-section-title {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--form-section-title-color);
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="button"] {
+  background-color: var(--submit-background);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--submit-hover-background);
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+label {
+  margin-right: 20px;
+  color: var(--text-color);
+}

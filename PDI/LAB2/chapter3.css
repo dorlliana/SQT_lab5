@@ -1,0 +1,60 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: #000000;
+    background-color: #f8ebfd;
+    text-align: center;
+}
+
+table.listadmission {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+td.header {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: #a4bcd1;
+    padding: 10px;
+    font-size: 14pt;
+}
+
+th {
+    background-color: #4545a2;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+td.name {
+    color: darkblue;
+    text-align: left;
+}
+
+/* Прізвище */
+td.surname {
+    color: darkgreen;
+    text-align: left;
+}
+
+/* По батькові */
+td.patronymic {
+    color: darkred;
+    text-align: left;
+}
+
+/* Попереднє місце навчання */
+td.education {
+    color: black;
+    text-align: left;
+}
+
+/* Факультет */
+td.faculty {
+    color: navy;
+    text-align: left;
+}
