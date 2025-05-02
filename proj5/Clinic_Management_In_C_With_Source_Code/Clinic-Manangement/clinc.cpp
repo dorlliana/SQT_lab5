@@ -37,6 +37,7 @@ bool check_id(int ch)
 };
 class doctor
 {
+	
 	public:
 	  void add()
 	  {
