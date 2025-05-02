@@ -164,6 +164,7 @@ class doctor
     } else {
         cout << "ID is not Registered\n";
     }
+ }
 void deleteList()
 {
 	int counter=0;
