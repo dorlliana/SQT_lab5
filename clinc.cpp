@@ -134,38 +134,36 @@ class doctor
 	   	cout<<"ID not present"<<endl;
 	   }
 }
-  void diagnosis()
-  {
-  	int n;
-    node *p=NULL,*prev=NULL;
-    p=new node;
-  	prev=head;
-    p=head;
-  	int ch;
-  	cout<<"enter Patient ID"<<endl;
-  	cin>>ch;
-	if(check_id(ch)){
-		while(p->id!=ch )
-	  	{
-	  		prev=p;
-	  		p=p->next;
-		}
-		p->diagnose=true;
-		cout<<"Enter Symptoms"<<endl;
-		cin>>p->symptom;
-		cout<<"Enter Diagnosis"<<endl;
-		cin>>p->diagnosis;
-		cout<<"Enter Medicines"<<endl;
-		cin>>p->medicine;
-		cout<<"Admit Required to Hospital?"<<endl;
-		cin>>p->addmission;
-		
-	}
-  	
-	else
-		cout<<"ID is not Registered\n";
-  	
-	}
+ void diagnosis() {
+    node *p = head;  // Не виділяємо нову пам'ять, починаємо з голови списку
+    node *prev = NULL;
+    int ch;
+    
+    cout << "enter Patient ID" << endl;
+    cin >> ch;
+    
+    if (check_id(ch)) {
+        while (p != NULL && p->id != ch) {
+            prev = p;
+            p = p->next;
+        }
+        
+        if (p != NULL) {  // Якщо пацієнта знайдено
+            p->diagnose = true;
+            cout << "Enter Symptoms" << endl;
+            cin >> p->symptom;
+            cout << "Enter Diagnosis" << endl;
+            cin >> p->diagnosis;
+            cout << "Enter Medicines" << endl;
+            cin >> p->medicine;
+            cout << "Admit Required to Hospital?" << endl;
+            cin >> p->addmission;
+        } else {
+            cout << "Patient with ID " << ch << " not found!" << endl;
+        }
+    } else {
+        cout << "ID is not Registered\n";
+    }
 void deleteList()
 {
 	int counter=0;
@@ -312,24 +310,29 @@ void menu()
 	cout<<"press 2 to patients menu"<<endl;
 	cout<<"press 3 to pharmacist menu"<<endl;
 }
-int main()
-{
-	struct node* head=NULL;
-	doctor u;
-	int i=0;
-	do{
-	dis();
-	cin>>i;
-	if(i==1)
-	u.add();
-	else if(i==2)
-	u.diagnosis();
-	else if(i==3)
-	u.show();
-	else if(i==4)
-	u.deleteList();
-	else if(i==5)
-	u.update_data();
-	}while(1);
-	return 0;
+int main() {
+    struct node* head = NULL;
+    doctor u;
+    int i = 0;
+    
+    do {
+        dis();
+        cin >> i;
+        
+        if (i == 0) { 
+            break;
+        } else if (i == 1) {
+            u.add();
+        } else if (i == 2) {
+            u.diagnosis();
+        } else if (i == 3) {
+            u.show();
+        } else if (i == 4) {
+            u.deleteList();
+        } else if (i == 5) {
+            u.update_data();
+        }
+    } while (1);
+    
+    return 0;
 }
